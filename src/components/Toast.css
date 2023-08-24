@@ -1,0 +1,22 @@
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+}
+
+#toast{
+    position: fixed;
+    background-color: rgb(187, 245, 245);
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+ 
+.invisible{
+    display: none !important;
+}
