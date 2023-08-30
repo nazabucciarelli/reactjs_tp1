@@ -6,8 +6,11 @@ import './components/toast/Toast.css';
 import Saludar from './components/saludar/Saludar';
 import SaludarPersonalizado from './components/saludar_personalizado/SaludarPersonalizado';
 import Clock from './components/clock/Clock';
+import ListPersons from './components/listar_personas/ListPersons';
 
 function App() {
+  let persons = [{"id":1,"name":"Nazareno","lastname":"Bucciarelli"},{"id":2,"name":"Florencia","lastname":"Ferrero"},
+  {"id":3,"name":"Juan","lastname":"Busso"},{"id":4,"name":"Luis","lastname":"Gutierrez"}];
   return (
     <div>
       <Logo />
@@ -21,6 +24,7 @@ function App() {
           Dis sem turpis mus velit hac sapien a cras, id sodales per interdum imperdiet massa taciti, erat purus platea laoreet
            mauris aptent ridiculus."/>
       <Clock/>
+      <ListPersons persons={persons}/>
     </div>
   )
 }
