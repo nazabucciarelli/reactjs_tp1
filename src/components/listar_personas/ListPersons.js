@@ -15,6 +15,11 @@ class ListPersons extends Component{
     }
 }
 
+ListPersons.defaultProps = {
+    "name":"Name",
+    "lastname":"Lastname"
+}
+
 // Exercise 10
 
 /* El atributo key se utiliza en React para que pueda trackear la identidad de cada elemento, y asi puede

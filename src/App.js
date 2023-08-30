@@ -7,10 +7,17 @@ import Saludar from './components/saludar/Saludar';
 import SaludarPersonalizado from './components/saludar_personalizado/SaludarPersonalizado';
 import Clock from './components/clock/Clock';
 import ListPersons from './components/listar_personas/ListPersons';
+import MayorOMenor from './components/mayor_o_menor/MayorOMenor';
+import ListPersonsExtended from './components/listar_personas/ListPersonsExtendes';
 
 function App() {
+
   let persons = [{"id":1,"name":"Nazareno","lastname":"Bucciarelli"},{"id":2,"name":"Florencia","lastname":"Ferrero"},
   {"id":3,"name":"Juan","lastname":"Busso"},{"id":4,"name":"Luis","lastname":"Gutierrez"}];
+
+  let personsWithAge = [{"id":1,"name":"Nazareno","lastname":"Bucciarelli","age":19},{"id":2,"name":"Florencia","lastname":"Ferrero","age":15},
+  {"id":3,"name":"Juan","lastname":"Busso","age":14},{"id":4,"name":"Luis","lastname":"Gutierrez","age":24}];
+
   return (
     <div>
       <Logo />
@@ -25,6 +32,8 @@ function App() {
            mauris aptent ridiculus."/>
       <Clock/>
       <ListPersons persons={persons}/>
+      <MayorOMenor age={12}/>      
+      <ListPersonsExtended persons={personsWithAge}/>
     </div>
   )
 }
