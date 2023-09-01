@@ -29,4 +29,15 @@ condicion ? true : false, despues tenemos el renderizado condicional sin ternari
 && o || y finalmente otra manera es utilizando sentencias if-else, y si queremos que no renderice el componente
 hacemos que retorne null. */
 
+// Exercise 14
+
+/* La propiedad defaultProps no es realmente necesaria, pero es útil para dar propiedades por
+defecto a algún componente, en caso éste sea invocado y no se inserten los atributos que requiere. */
+
+// Exercise 16  
+
+/* React Developer Tools es una extensión para navegadores. A través de esta herramienta podemos 
+observar el árbol de elementos de una aplicación React, con sus states, props y otras propiedades 
+permitiéndonos encontrar errores y saber cómo está estructurada dicha página.*/
+
 export default ListPersonsExtended;

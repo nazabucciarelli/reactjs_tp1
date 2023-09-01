@@ -9,24 +9,19 @@ class Clock extends Component{
             minutes : date.getMinutes(),
             seconds : date.getSeconds()
         }
-        setInterval((date=new Date()) => { this.setState({
-            hours : date.getHours(),
-            minutes : date.getMinutes(),
-            seconds : date.getSeconds()
-        })},1000)
     }
 
     render(){
         let hour = this.state.hours;
         let minute = this.state.minutes;
         let second = this.state.seconds;
-        if( hour>= 0 && hour <= 9){
+        if(hour <= 9){
             this.state.hours = '0' + hour
         } 
-        if (minute >= 0 && minute <= 9){
+        if (minute <= 9){
             this.state.minutes = '0' + minute;
         }
-        if (second >= 0 && second <= 9){
+        if (second <= 9){
             this.state.seconds = '0' + second;
         }
         return(
@@ -36,6 +31,14 @@ class Clock extends Component{
                 borderRadius:'0.7em'}}>{this.state.hours} : {this.state.minutes} : {this.state.seconds}</h1>
             </div>
         )
+    }
+
+    componentDidMount(){
+        setInterval((date=new Date()) => { this.setState({
+            hours : date.getHours(),
+            minutes : date.getMinutes(),
+            seconds : date.getSeconds()
+        })},1000)
     }
 
 }

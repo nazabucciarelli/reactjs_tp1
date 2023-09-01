@@ -8,7 +8,7 @@ import SaludarPersonalizado from './components/saludar_personalizado/SaludarPers
 import Clock from './components/clock/Clock';
 import ListPersons from './components/listar_personas/ListPersons';
 import MayorOMenor from './components/mayor_o_menor/MayorOMenor';
-import ListPersonsExtended from './components/listar_personas/ListPersonsExtendes';
+import ListPersonsExtended from './components/listar_personas/ListPersonsExtended';
 
 function App() {
 
